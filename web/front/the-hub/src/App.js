@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { createUser } from './firebase';
+
+
 
 function App() {
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    console.log(email, password);
+    createUser(email, password);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <input type="text" id="email" placeholder="email" />
+        <input type="password" id="password" placeholder="password" />
+        <button type="submit" onClick={handleSubmit}>Sign Up</button>
+      </form>
+      
+      
     </div>
   );
 }
