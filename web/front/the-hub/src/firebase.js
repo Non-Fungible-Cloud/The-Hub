@@ -1,10 +1,10 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { getDatabase, ref, set } from "firebase/database";
-
+import firebaseConfig from './firebaseconfig.js';
 
 //el config por secret, importar lo tengo vacio para que no haya errores
-const firebaseConfig = "";
+
 
 //poner esto en un usestate
 const app = initializeApp(firebaseConfig);
@@ -12,7 +12,7 @@ const db = getDatabase(app);
 export const auth = getAuth(app);
 
 
-export const createUser = (email, password) => {
+export async function createUser (email, password) {
     
     createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
         // Signed in
@@ -32,7 +32,7 @@ export const createUser = (email, password) => {
 
 //obtener UUID de usuario en firebase auth
 
-const getUUID = () => {
+export const getUUID = () => {
     return auth.currentUser.uid;
 };
 
