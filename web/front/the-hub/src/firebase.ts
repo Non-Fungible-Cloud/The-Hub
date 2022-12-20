@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { getDatabase, ref, set } from "firebase/database";
+
+//@ts-ignore
 import firebaseConfig from "./firebaseconfig";
 
 //el config por secret, importar lo tengo vacio para que no haya errores
