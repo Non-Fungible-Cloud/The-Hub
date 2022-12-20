@@ -5,11 +5,10 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import MarketplacePage from "src/pages/marketplace";
 
 /* import { Loader } from "components/atoms"; */
 
-import { LandingPage } from "../pages";
+import { LandingPage, MarketplacePage, MarketplaceItemPage } from "../pages";
 
 const AppRoutes = () => {
   return (
@@ -26,11 +25,11 @@ const AppRoutes = () => {
             <Route path="/home" element={<LandingPage />} />
             <Route path="/marketplace" element={<MarketplacePage />} />
 
-            {/* <Route path="/login" element={<LogInPage />} />
+            {/* <Route path="/login" element={<LogInPage />} /> */}
             <Route
               path="/marketplace/:id"
-              element={<MarketPlacePa />}
-            /> */}
+              element={<MarketplaceItemPage />}
+            /> 
             <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </Router>

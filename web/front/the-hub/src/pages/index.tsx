@@ -1,12 +1,14 @@
 import AppHeader from "./header";
 //import AppFooter from "./footer";
 import LandingPage from "./landing";
-import MarketPlace from "./marketplace";
+import MarketplacePage from "./marketplace";
+import MarketplaceItemPage from "./marketplaceItem";
 
 
 
 export {
     AppHeader,
     LandingPage,
-    MarketPlace
+    MarketplacePage,
+    MarketplaceItemPage
 };
