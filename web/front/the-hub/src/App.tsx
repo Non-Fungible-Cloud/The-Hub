@@ -1,60 +1,32 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import { createUser, getUUID } from './firebase';
-
-
+import { createTheme, responsiveFontSizes, ThemeProvider } from "@mui/material";
+import { Shadows } from "@mui/material/styles/shadows";
+//import theme from "config/theme.config.json";
+import React from "react";
+import "./App.css";
+import { AppRoutes } from "./routes";
 
 function App() {
-
-  const[uuid, setUUID] = useState<string|null>("");
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Actualiza el título del documento usando la API del navegador
-    if(uuid === ""){
-      setIsLoading(true);
-    } else {
-      setIsLoading(false);
-    }
-  }, [uuid]);
-
-
-  const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
-    e.preventDefault();
-    const target = e.target as typeof e.target & {
-      email: { value: string };
-      password: { value: string };
-    };
-    // Get email and password values
-    const email = target.email.value;
-    const password = target.password.value;
-    handleCreateUser(email, password);
-  }
-
-  const handleCreateUser = (email: string, password: string) => {
-    createUser(email, password).then(() => {
-      handleUUID();
-      console.log(uuid);
-    });
-  }
-
-
-  async function handleUUID () {
-    const uuid = getUUID();
-    setUUID(uuid);
-  }
-
+  /* return (
+    <ThemeProvider
+      theme={responsiveFontSizes(
+        createTheme({
+          ...theme,
+          shadows: Array(25).fill(
+            "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
+          ) as Shadows,
+        })
+      )}
+    >
+      <div className="App">
+        <AppRoutes />
+      </div>
+    </ThemeProvider>
+  ); */
 
   return (
     <div className="App">
-      {!isLoading && <h1>{uuid}</h1>}
-      <form onSubmit={handleSubmit}>
-        <input type="text" id="email" name="email" placeholder="email" />
-        <input type="password" id="password" name="password" placeholder="password" />
-        <button type="submit">Sign Up</button>
-      </form>
+        <AppRoutes />
     </div>
-
   );
 }
 
