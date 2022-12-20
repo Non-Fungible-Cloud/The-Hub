@@ -25,11 +25,10 @@ const Page = (props: {
               </div>
             )}
           </Box>
-          <Box className="w-full max-w pb-[350px] min-h-[calc(100vh)]">
+          <Box className="mt-14 mx-48 pb-[350px] h-[calc(100vh-40px)] w-min-max md:mx-24 sm:mx-10 min-[320px]:mx-6">
             {props.children}
           </Box>
-{/*           <Box className="w-full max-w-7xl mt-10 pb-[350px] min-h-[calc(100vh-100px)]">{props.children}</Box>
- */}       {/*  <AppFooter /> */}    
+          {/*  <AppFooter /> */}    
       <div/>
       </div>)}
     </>

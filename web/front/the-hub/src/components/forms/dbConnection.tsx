@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { createUser, getUUID } from './firebase';
+import { createUser, getUUID } from '../../firebase';
 
 
 

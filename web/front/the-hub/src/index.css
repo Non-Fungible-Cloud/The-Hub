@@ -14,3 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Gotham Ultra';
+  src: url('./fonts/gothamUltra.otf') format("opentype");
+}
