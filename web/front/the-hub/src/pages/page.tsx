@@ -9,11 +9,14 @@ const Page = (props: {
   actions?: React.ReactNode;
   background?: string;
 }) => {
+
+  console.log(props.background);
+
   return (
     <>
     <AppHeader />
     {props.background && (
-    <div className="bg-cover bg-center bg-no-repeat fix" style={{backgroundImage: `url(/hereticsback.png)`}}>
+    <div className="bg-cover bg-center bg-no-repeat fix" style={{backgroundImage: `${props.background}`}}>
       
       
            

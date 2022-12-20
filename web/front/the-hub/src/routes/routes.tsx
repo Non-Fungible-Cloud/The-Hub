@@ -5,6 +5,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import MarketplacePage from "src/pages/marketplace";
 
 /* import { Loader } from "components/atoms"; */
 
@@ -23,10 +24,12 @@ const AppRoutes = () => {
         <Router>
           <Routes>
             <Route path="/home" element={<LandingPage />} />
+            <Route path="/marketplace" element={<MarketplacePage />} />
+
             {/* <Route path="/login" element={<LogInPage />} />
             <Route
               path="/marketplace/:id"
-              element={<RegisterPage />}
+              element={<MarketPlacePa />}
             /> */}
             <Route path="*" element={<Navigate to="/home" />} />
           </Routes>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box, Button, Card, Typography } from "@mui/material";
+import { Button, Card, Typography } from "@mui/material";
 
 import Page from "./page";
 
@@ -12,7 +12,7 @@ const LandingPage = () => {
 
 
     return(
-            <Page background="/hereticsback.png">
+            <Page background="url(/hereticsback.png)">
                 <div className="h-full w-full flex justify-center items-center">
                 <Card className="w-[600px] h-76 p-9 border-2 border-black shadow" sx={{ boxShadow: '5px 7px 10px rgba(0,0,0,0.6)', borderRadius:'15px', backgroundColor: "rgba(255,255,255,0.6);"}}>
                     <div className="flex flex-row justify-between gap-5">
