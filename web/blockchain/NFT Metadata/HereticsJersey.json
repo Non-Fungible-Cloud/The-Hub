@@ -1,0 +1,15 @@
+{
+    "name": "Heretics Jersey",
+    "description": "", 
+    "external_url": "https://th3hereticshub.com", 
+    "image": "", 
+    "attributes": [
+        {
+            "trait_type": "Clothing",
+            "value": "Pro Kit"
+        },
+        {
+            "trait_type": "Sponsors",
+            "value": "LEGION by Lenovo"
+        }]
+  }

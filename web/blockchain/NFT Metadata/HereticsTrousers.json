@@ -1,0 +1,11 @@
+{
+    "name": "Heretics Trousers",
+    "description": "", 
+    "external_url": "https://th3hereticshub.com", 
+    "image": "", 
+    "attributes": [
+        {
+            "trait_type": "Clothing",
+            "value": "Trousers"
+        }]
+  }

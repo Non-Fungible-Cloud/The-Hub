@@ -8,13 +8,12 @@ import "@openzeppelin/contracts@4.8.0/token/ERC1155/extensions/ERC1155Supply.sol
 // TODO change name of the token
 // Create a nft contract for each apparel?
 
-
-contract TESTNFTs is ERC1155, Ownable, ERC1155Supply {
+contract HereticsTrousers is ERC1155, Ownable, ERC1155Supply {
     uint128[] supplies = [500, 50];
     uint128[] minted = [0, 0];
-    uint64[] price = [0.05 ether, 0.1 ether];
+    uint64[] price = [0.02 ether, 0.6 ether];
 
-    constructor() ERC1155("https://ipfs.io/ipfs/QmbAx3rWxnC4NH6sa67TVibc9QSKHT6cLdVKSNyxtotVBS") {}
+    constructor() ERC1155("") {}
 
     function setURI(string memory newuri) public onlyOwner {
         _setURI(newuri);
@@ -41,7 +40,6 @@ contract TESTNFTs is ERC1155, Ownable, ERC1155Supply {
 
 
     // The following functions are overrides required by Solidity.
-
     function _beforeTokenTransfer(address operator, address from, address to, uint256[] memory ids, uint256[] memory amounts, bytes memory data)
         internal
         override(ERC1155, ERC1155Supply)
