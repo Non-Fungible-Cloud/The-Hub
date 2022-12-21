@@ -5,15 +5,13 @@ import "@openzeppelin/contracts@4.8.0/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts@4.8.0/access/Ownable.sol";
 import "@openzeppelin/contracts@4.8.0/token/ERC1155/extensions/ERC1155Supply.sol";
 
-// TODO change name of the token
-// Create a nft contract for each apparel?
-
-contract HereticsTrousers is ERC1155, Ownable, ERC1155Supply {
+contract HereticsSweatpants is ERC1155, Ownable, ERC1155Supply {
     uint128[] supplies = [500, 50];
     uint128[] minted = [0, 0];
-    uint64[] price = [0.02 ether, 0.6 ether];
+    uint64[] price = [0.01 ether, 0.5 ether];
+    mapping (address => bool) addressHasNFT; 
 
-    constructor() ERC1155("") {}
+    constructor() ERC1155("https://ipfs.io/ipfs/QmUr1f1u6CEbKvHZc9pAqj928HTWLMLdHWPiUR31P7RipY") {}
 
     function setURI(string memory newuri) public onlyOwner {
         _setURI(newuri);
@@ -29,6 +27,7 @@ contract HereticsTrousers is ERC1155, Ownable, ERC1155Supply {
         require(minted[id -1] + amount <= supplies[id - 1], "Not enough supply");
 
         _mint(msg.sender, id, amount, "");
+        addressHasNFT[msg.sender] = true;
         minted[id-1] += amount;
     }
 
@@ -45,5 +44,9 @@ contract HereticsTrousers is ERC1155, Ownable, ERC1155Supply {
         override(ERC1155, ERC1155Supply)
     {
         super._beforeTokenTransfer(operator, from, to, ids, amounts, data);
+    }
+
+    function isNFTOwner() public view returns(bool){
+        return addressHasNFT[msg.sender];
     }
 }
