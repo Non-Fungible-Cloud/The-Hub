@@ -10,8 +10,6 @@ const Page = (props: {
   background?: string;
 }) => {
 
-  console.log(props.background);
-
   return (
     <>
     <AppHeader />
