@@ -8,6 +8,15 @@ const ItemDetailCard = (props: {
     description?: string;
     price?: number;
 }) => {
+
+    
+
+
+    const metaBuy = () => {
+
+    }
+
+
     return (
 
         <div className="flex flex-row justify-between gap-10 mt-20">
@@ -36,13 +45,13 @@ const ItemDetailCard = (props: {
                         <Typography> {props.price} ETH </Typography>
                     </div>
                     <div className="flex flex-row justify-evenly items-center mt-6">
-                        <Button className="h-10 w-[180px]" style={{
+                        <Button onClick={()=> metaBuy()} className="h-10 w-[180px]" style={{
                             backgroundImage: 'linear-gradient(45deg, #F2766B, #A6281C)', color: 'black',
                             boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)', cursor: 'pointer',
                             transition: '0.4s', backgroundSize: '200%',
                         }}>
                             META-BUY! </Button>
-                        <Typography> {props.price} ETH </Typography>
+                        <Typography> 0.01 ETH </Typography>
                     </div>
                 </div>
             </div>
