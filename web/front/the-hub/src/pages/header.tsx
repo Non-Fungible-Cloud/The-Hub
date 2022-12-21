@@ -10,27 +10,27 @@ const AppHeader = () => {
       className={`sticky h-[70px] top-0 z-50 w-full flex  items-center justify-between gap-5 bg-black px-4 py-3 md:px-8 lg:px-24 xl:px-48`}
     >
       <a href="/home" className="mr-5">
-          <img src="/THH_white.png" alt="logo" className="h-8" />
+        <img src="/THH_white.png" alt="logo" className="h-8" />
       </a>
 
       <a href="/download">
-            <Typography color={"white"}> DOWNLOAD </Typography>
+        <Typography color={"white"}> DOWNLOAD </Typography>
       </a>
 
       <a href="/marketplace">
-            <Typography  color={"white"}> MARKETPLACE </Typography>
+        <Typography color={"white"}> MARKETPLACE </Typography>
       </a>
 
       <a href="/items">
-            <Typography  color={"white"}> MY ITEMS </Typography>
+        <Typography color={"white"}> MY ITEMS </Typography>
       </a>
 
       <a href="/faqs">
-            <Typography color={"white"}> FAQS </Typography>
+        <Typography color={"white"}> FAQS </Typography>
       </a>
 
-      <a href="/profile" className="ml-5">
-          <img src="/THH_white.png" alt="logo" className="h-8" />
+      <a href="/profile" className="ml-5 flex flex-row">
+        <img src="/MetaMask_Fox.svg.png" alt="logo" className="h-8 justify-center " />
       </a>
     </header>
   );

@@ -18,7 +18,7 @@ const MarketplaceItemPage = () => {
 
     useEffect(() => {
         //Blockchain Connection
-        setItem({name: "Test", id: 1, image: "/clothing/trousers.png", description: "With this trousers, you can show off your style in-game", price: 1});
+        setItem({name: "Test", id: 1, image: "/clothing/trousers.png", description: "Stay comfortable and stylish with these Heretics sweatpants. Made from a soft polyester and spandex fabric, these pants will provide you with the comfort and freedom of movement you need during workouts or leisure time. They also feature an elastic waistband and adjustable drawstrings for a perfect fit. Show your support for the team with the distinctive Heretics logo and colors. The Heretics sweatpants are the perfect choice for any team fan!", price: 1});
         setIsLoading(false);
     }, []);
 
@@ -26,7 +26,7 @@ const MarketplaceItemPage = () => {
 
     return(
 
-            <Page background="url(/hereticsback.png)">
+            <Page background="white">
                 <div className="h-full w-full flex justify-center items-center">
                          {!isLoading && (
                             <ItemDetailCard image={item.image} name={item.name} description={item.description} price={item.price}></ItemDetailCard>           
