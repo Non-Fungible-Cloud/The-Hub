@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { Button, Card, Typography } from "@mui/material";
+import { Card, Typography } from "@mui/material";
 
+import ActionButton from "src/components/buttons/actionbutton";
 import Page from "./page";
 
 //import Background from "public/background.png";
@@ -29,23 +29,7 @@ const LandingPage = () => {
               className="h-48 sm:h-36 min-[320px]:h-24 object-contain"
             />
           </div>
-          <Button
-            className="h-10 w-[280px]"
-            style={{
-              backgroundImage:
-                "linear-gradient(45deg, #e74c3c, #8e44ad, #f1c40f)",
-              color: "white",
-              boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-              cursor: "pointer",
-              transition: "0.4s",
-              backgroundSize: "200%",
-              marginTop: "20px",
-            }}
-          >
-            <span style={{ textShadow: "0 0 2px #0002" }}>
-              Start Exploring!
-            </span>{" "}
-          </Button>
+          <ActionButton style={{marginTop: '20px'}}>Start Exploring!</ActionButton>
         </Card>
       </div>
     </Page>
