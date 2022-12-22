@@ -18,7 +18,7 @@ const MarketplaceItemPage = () => {
       name: "Test",
       id: 1,
       image: "/clothing/trousers.png",
-      description: "With this trousers, you can show off your style in-game",
+      description: "With these trousers, you can show off your style in-game",
       price: 1,
     });
     setIsLoading(false);

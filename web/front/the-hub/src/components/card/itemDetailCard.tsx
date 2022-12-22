@@ -10,7 +10,7 @@ const ItemDetailCard = (props: {
 }) => {
   return (
     <Card
-      className="w-[1400px] h-[650px] mt-24 p-9 border-2 border-black shadow"
+      className="mt-24 px-20 py-9 border-2 border-black shadow"
       sx={{
         border: "solid 1px #222",
         boxShadow: "5px 7px 10px rgba(0,0,0,0.2)",
@@ -19,19 +19,19 @@ const ItemDetailCard = (props: {
         backgroundColor: "rgba(255,255,255,0.6);",
       }}
     >
-      <div className="flex flex-row justify-between gap-5">
+      <div className="flex flex-row justify-between gap-5 flex-wrap">
         <img
           src={props.image}
           alt="item"
-          className=""
+          className="min-w-[320px] h-96 object-contain"
           style={{ filter: "drop-shadow(-5px -5px 0px #8e44ad) drop-shadow(5px 5px 0px #f23927) drop-shadow(10px 10px 5px #8e44ad44)" }}
         />
-        <div className="flex flex-col justify-evenly content-between mr-28">
+        <div className="flex flex-col justify-center content-between items-start">
           <Typography variant="h3">{props.name}</Typography>
-          <Typography variant="h6" className="max-w-md">
+          <Typography fontSize="16px" marginTop="10px" className="max-w-md text-left">
             {props.description}
           </Typography>
-          <div className="flex flex-row justify-evenly items-center mt-6">
+          <div className="flex flex-row justify-evenly items-center gap-6 mt-20">
             <ActionButton>Buy now</ActionButton>
             <Typography> {props.price} ETH </Typography>
           </div>
