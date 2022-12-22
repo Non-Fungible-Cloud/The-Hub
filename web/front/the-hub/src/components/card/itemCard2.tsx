@@ -19,10 +19,8 @@ useEffect(() => {
     //check if name contains heretics, if so save name without 'heretics' and set isLoading to false
     if(props.name?.toLowerCase().includes("heretics")){
         setName(props.name?.toLowerCase().replace("heretics", ""));
-        console.log("includes");
         setIsLoading(false);
     }  else {
-        console.log("does not include");
         setIsLoading(false);
     } 
     

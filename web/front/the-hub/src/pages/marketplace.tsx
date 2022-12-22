@@ -20,8 +20,8 @@ const MarketplacePage = () => {
                 <Typography className="" variant={'h4'}>Clothing</Typography>    
                 <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">
                     <ItemCard2 name="Heretics Jersey" image="/clothing/jersey.png" id={1}></ItemCard2>
-                    <ItemCard2 name="Sweatpants" image="/clothing/sweatpants.png"  id={2}></ItemCard2>
-                    <ItemCard2 name="Sweatshirt" image="/clothing/sweatshirt.png"  id={3}></ItemCard2>
+                    <ItemCard2 name="Sweatshirt" image="/clothing/sweatshirt.png"  id={2}></ItemCard2>
+                    <ItemCard2 name="Sweatpants" image="/clothing/sweatpants.png"  id={3}></ItemCard2>
                     <ItemCard2 name="T-shirt" image="/clothing/shirt.jpg"  id={4}></ItemCard2>
                 </div>    
             </div>
