@@ -1,7 +1,9 @@
 # Content
 - [Spanish](#spanish)
 - [English](#english) 
+- [Diagrams](#diagrams)
 - [Images](#images)
+
 
 # Spanish
  
@@ -240,6 +242,17 @@ discount more products from the club and sponsoring brands.
 - Traceability of all purchases.
 - Benefits to fans.
 - Obtaining accurate data.
+
+
+# Diagrams
+
+![Dapp Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Dapp%20Diagram.png?raw=true)
+![Technological Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Technological%20Diagram.png?raw=true)
+![Sequence Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Sequence%20Diagram.png?raw=true)
+
+
+
+
 
 # Images
 
