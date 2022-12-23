@@ -73,7 +73,7 @@ const ProfilePage = () => {
                         <Typography variant="h6">Retrieving data from the blockchain, please wait... </Typography>
                     </div>
                 ) : (
-                    itemList.length > 3 ? (
+                    itemList.length > 0 ? (
                             itemList.map((item) => (
                                 <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">
                                     <ItemCard2 name={item.name} image={item.image} id={item.id}></ItemCard2>
