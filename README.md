@@ -283,24 +283,24 @@ discount more products from the club and sponsoring brands.
 
 ## In Game Screenshots
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/Center1.png?raw=true)
+![Center 1](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/Center1.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/Center2.png?raw=true)
+![Center 2](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/Center2.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/Center3.png?raw=true)
+![Center 3](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/Center3.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/GoldZone1.png?raw=true)
+![Gold Zone 1](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/GoldZone1.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/GoldZone2.png?raw=true)
+![Gold Zone 2](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/GoldZone2.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/RedZone1.png?raw=true)
+![Red Zone 1](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/RedZone1.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/RedZone2.png?raw=true)
+![Red Zone 2](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/RedZone2.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/BlueZone1.png?raw=true)
+![Blue Zone 1](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/BlueZone1.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/BlueZone2.png?raw=true)
+![Blue Zone 2](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/BlueZone2.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/BlueZone3.png?raw=true)
+![Blue Zone 3](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/BlueZone3.png?raw=true)
 
-![](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/BlueZone4.png?raw=true)
+![Blue Zone 4](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/in-game/BlueZone4.png?raw=true)
