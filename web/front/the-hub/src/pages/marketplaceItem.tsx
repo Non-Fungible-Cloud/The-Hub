@@ -32,8 +32,8 @@ const MarketplaceItemPage = () => {
 
 
     return(
-        <Page background="white">
-            <div className="h-full w-full flex justify-center items-center">
+        <Page background="url(/hereticsback.png)">
+            <div className="w-full relative">
                         {!isLoading && (
                         <ItemDetailCard id={item.id} image={item.image} name={item.name} description={item.description} price={item.price}></ItemDetailCard>           
                         )}

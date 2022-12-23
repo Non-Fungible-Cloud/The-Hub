@@ -38,46 +38,67 @@ const ItemDetailCard = (props: {
 
 
     return (
-
-        <div className="flex flex-row justify-between gap-10 mt-20">
-            <img src={props.image} alt="item" className="bg-white rounded" />
-            <div className="flex flex-col content-between mr-28">
-                <Typography variant="h3" className="text-left pb-10">
+        <div className="">
+        
+        <Card
+      className="mt-24 border-black shadow pb-10"
+      sx={{    
+        marginLeft: "auto",
+        marginRight: "auto",
+        boxShadow: "5px 7px 10px rgba(0,0,0,0.2)",
+        backdropFilter: "blur(5px)",
+        borderRadius: "10px",
+        backgroundColor: "rgba(255,255,255,0.8);",
+        flexGrow: 1,
+        maxWidth: "1500px",
+      }}
+    >
+        <div className="flex flex-row gap-2 mt-10">
+            <img src={props.image} alt="item" className="bg-white rounded h-[500px] mx-10"/>
+                <div className="flex flex-col content-between mr-14">
+                <Typography variant="h3" className="text-left pb-8">
                     {props.name} #000{props.id}
                 </Typography>
-                <p className="max-w-md text-left">
-                    {props.description}
-                </p>
-
-                <div className="bg-red-700 rounded text-white mt-10 p-4">
-                    <p className="text-3xl p-2 font-black">Warning!</p>
-                    <p>There are two variants of this item. The meta-buy button is for buying the item only for "TH3 HUB". If you press the normal buy button, you will get the item in "TH3 HUB", but also the item will be delivered in your home.</p>
+                <div className="flex flex-row justify-between">
+                         <p className="max-w-xl text-left text-2xl pr-6">
+                        {props.description}
+                        </p>
+                   
+                    <div className="flex flex-col w-[400px]">
+                        <div className="bg-red-700 rounded text-white p-4 ml-10">
+                            <p className="text-3xl p-2 font-black">Warning!</p>
+                            <p>There are two variants of this item. The meta-buy button is for buying the item only for "TH3 HUB". If you press the normal buy button, you will get the item in "TH3 HUB", but also the item will be delivered to your home.</p>
+                        </div>
+                        <div className="flex flex-col justify-between">
+                            <div className="flex flex-row justify-evenly items-center mt-10 ">
+                                <Button onClick={()=> buy()} className="h-10 w-[180px]" style={{
+                                    backgroundImage: 'linear-gradient(45deg, #F2766B, #A6281C)', color: 'black',
+                                    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)', cursor: 'pointer',
+                                    transition: '0.4s', backgroundSize: '200%',
+                                }}>
+                                    BUY! </Button>
+                                <Typography> {props.price} ETH </Typography>
+                            </div>
+                            <div className="flex flex-row justify-evenly items-center mt-6">
+                                <Button onClick={()=> metaBuy()} className="h-10 w-[180px]" style={{
+                                    backgroundImage: 'linear-gradient(45deg, #F2766B, #A6281C)', color: 'black',
+                                    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)', cursor: 'pointer',
+                                    transition: '0.4s', backgroundSize: '200%',
+                                }}>
+                                    META-BUY! </Button>
+                                <Typography> 0.01 ETH </Typography>
+                            </div>
+                            </div>
                 </div>
-
-                <div className="flex flex-col justify-between">
-                    <div className="flex flex-row justify-evenly items-center mt-6 ">
-                        <Button onClick={()=> buy()} className="h-10 w-[180px]" style={{
-                            backgroundImage: 'linear-gradient(45deg, #F2766B, #A6281C)', color: 'black',
-                            boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)', cursor: 'pointer',
-                            transition: '0.4s', backgroundSize: '200%',
-                        }}>
-                            BUY! </Button>
-                        <Typography> {props.price} ETH </Typography>
-                    </div>
-                    <div className="flex flex-row justify-evenly items-center mt-6">
-                        <Button onClick={()=> metaBuy()} className="h-10 w-[180px]" style={{
-                            backgroundImage: 'linear-gradient(45deg, #F2766B, #A6281C)', color: 'black',
-                            boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)', cursor: 'pointer',
-                            transition: '0.4s', backgroundSize: '200%',
-                        }}>
-                            META-BUY! </Button>
-                        <Typography> 0.01 ETH </Typography>
-                    </div>
                 </div>
+                
+
+                
             </div>
 
         </div>
-
+        </Card>
+        </div>
     );
 };
 

@@ -26,7 +26,7 @@ const Page = (props: {
               </div>
             )}
           </Box>
-          <Box className="mt-14 mx-48 pb-[350px] h-[calc(100vh-40px)] w-min-max md:mx-24 sm:mx-10 min-[320px]:mx-6">
+          <Box className="mt-14 mx-48 pb-[350px] h-[calc(100vh-40px)] w-min-max md:mx-10 md:mt-[-60px] sm:mx-10 min-[320px]:mx-6">
             {props.children}
           </Box>
           {/*  <AppFooter /> */}    
