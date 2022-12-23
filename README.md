@@ -245,4 +245,40 @@ discount more products from the club and sponsoring brands.
 
 ## Mockups
 
+![Branding](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/mockups/Branding.png?raw=true)
+
+![Landing](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/mockups/LANDING.png?raw=true)
+
+![Sing Up](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/mockups/Sign%20up.png?raw=true)
+
+![Log In](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/mockups/Log%20in.png?raw=true)
+
+![Edit Profile](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/mockups/Edit%20profile.png?raw=true)
+
+![Marketplace](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/mockups/MARKETPLACE.png?raw=true)
+
+
+## Web
+
+![Landing](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/landing.png?raw=true)
+
+![Marketplace 1](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/Marketplace1.png?raw=true)
+
+![Marketplace 2](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/Marketplace2.png?raw=true)
+
+![Item 1](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/item1.png?raw=true)
+
+![Item 2](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/item2.png?raw=true)
+
+![Item 3](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/item3.png?raw=true)
+
+![My Items](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/MyItems.png?raw=true)
+
+![Open Sea](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/opensea.png?raw=true)
+
+![Faqs](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/web-img/faqs.png?raw=true)
+
+
+## In Game Screenshots
+
 
