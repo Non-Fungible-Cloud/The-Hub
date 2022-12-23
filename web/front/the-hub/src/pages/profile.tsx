@@ -74,11 +74,11 @@ const ProfilePage = () => {
                     </div>
                 ) : (
                     itemList.length > 0 ? (
-                            itemList.map((item) => (
-                                <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">
+                        <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">    
+                            {itemList.map((item) => (
                                     <ItemCard2 name={item.name} image={item.image} id={item.id}></ItemCard2>
-                                </div>
-                            ))
+                            ))}
+                        </div>
                     ) : (
                         <div  className="mt-12">
                             <Typography variant="h6"> You don't own any collectibles yet. </Typography>
