@@ -8,7 +8,7 @@ import {
 
 /* import { Loader } from "components/atoms"; */
 
-import { LandingPage, MarketplacePage, MarketplaceItemPage } from "../pages";
+import { LandingPage, MarketplacePage, MarketplaceItemPage, ProfilePage } from "../pages";
 
 const AppRoutes = () => {
   return (
@@ -24,7 +24,7 @@ const AppRoutes = () => {
           <Routes>
             <Route path="/home" element={<LandingPage />} />
             <Route path="/marketplace" element={<MarketplacePage />} />
-
+            <Route path="/items" element={<ProfilePage />} />
             {/* <Route path="/login" element={<LogInPage />} /> */}
             <Route
               path="/marketplace/:id"

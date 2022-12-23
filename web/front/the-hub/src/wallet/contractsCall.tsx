@@ -58,3 +58,16 @@ export async function mintSweatpants(id: number, amount: number) {
         return await contract2.mint(id, amount, {value: ethers.utils.parseEther("0.05")});
     }
 }
+
+
+export async function isNFTOwner0(){
+    return await contract0.isNFTOwner();
+}
+
+export async function isNFTOwner1(){
+    return await contract1.isNFTOwner();
+}
+
+export async function isNFTOwner2(){
+    return await contract2.isNFTOwner();
+}

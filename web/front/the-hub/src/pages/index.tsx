@@ -3,6 +3,7 @@ import AppHeader from "./header";
 import LandingPage from "./landing";
 import MarketplacePage from "./marketplace";
 import MarketplaceItemPage from "./marketplaceItem";
+import ProfilePage from "./profile";
 import PageLoged from "./logedPage";
 import Page from "./page";
 
@@ -13,6 +14,7 @@ export {
     LandingPage,
     MarketplacePage,
     MarketplaceItemPage,
+    ProfilePage,
     Page,
     PageLoged
 };
