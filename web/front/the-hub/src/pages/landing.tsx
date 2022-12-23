@@ -8,11 +8,12 @@ import ActionButton from "src/components/buttons/actionbutton";
 const LandingPage = () => {
   return (
     <Page background="url(/hereticsback.png)">
-      <div className="h-full w-full flex justify-center items-center">
+      <div className="w-full relative justify-center items-center">
         <Card
-          className="w-[600px] px-9 py-16"
+          className="w-[600px] px-9 py-16 mt-56"
           sx={{
-            border: 'solid 1px #222',
+            marginLeft: "auto",
+            marginRight: "auto",
             boxShadow: "5px 7px 10px rgba(0,0,0,0.2)",
             backdropFilter: "blur(5px)",
             borderRadius: "10px",
@@ -29,7 +30,7 @@ const LandingPage = () => {
               className="h-48 sm:h-36 min-[320px]:h-24 object-contain"
             />
           </div>
-          <ActionButton style={{marginTop: '20px'}}>Start Exploring!</ActionButton> 
+          <ActionButton url="http://localhost:3000/marketplace" style={{marginTop: '20px'}}>Start Exploring!</ActionButton> 
         </Card>
       </div>
     </Page>

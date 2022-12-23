@@ -27,21 +27,20 @@ const ProfilePage = () => {
         isNFTOwner0().then((result:any) => {
             if (result == true) {
                 console.log(result);
-                let item = {name:"Heretics Jersey", image:"/clothing/jersey.png", id:1}
+                let item = {name:"Heretics Jersey", image:"/clothing/jersey.png", id:1, asset:'0xB4B650A151c52Ad4BAafa0F46fd13637B02F4C94'}
                 itemsList.push(item);
             }
             isNFTOwner1().then((res:any) => {
                 if (res == true) {
                     console.log(res);
-                    let item2 = {name:"Sweatshirt", image:"/clothing/sweatshirt.png", id:2}
+                    let item2 = {name:"Sweatshirt", image:"/clothing/sweatshirt.png", id:2, asset:'0x47453D766578d48586EB98Eb127364939BA3aE15'}
                     itemsList.push(item2);
                 }
                 isNFTOwner2().then((r:any) => {
                     if (r == true) {
                         console.log(result);
-                        let item = {name:"Sweatpants", image:"/clothing/sweatpants.png", id:3}
+                        let item = {name:"Sweatpants", image:"/clothing/sweatpants.png", id:3,  asset:'0x8c7126cfBA2C66160a232470D986748605300ec1'}
                         itemsList.push(item);
-                        
                     }
                     setItem(itemsList);
                     console.log("itemlist")
@@ -76,7 +75,7 @@ const ProfilePage = () => {
                     itemList.length > 0 ? (
                         <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">    
                             {itemList.map((item) => (
-                                    <ItemCard2 name={item.name} image={item.image} id={item.id}></ItemCard2>
+                                    <ItemCard2 name={item.name} image={item.image} id={item.id} asset={item.asset}></ItemCard2>
                             ))}
                         </div>
                     ) : (

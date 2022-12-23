@@ -11,13 +11,10 @@ const Page = (props: {
 }) => {
 
   return (
-    <>
+    <div className="">
     <AppHeader />
     {props.background && (
-    <div className="bg-cover bg-center bg-no-repeat fix" style={{backgroundImage: `${props.background}`}}>
-      
-      
-           
+    <div className="bg-cover bg-center bg-no-repeat fix" style={{backgroundImage: `${props.background}`}}>          
           <Box className="flex items-center justify-between md:flex-row">
             {props.title && <Typography variant="h1">{props.title}</Typography>}
             {props.actions && (
@@ -32,7 +29,7 @@ const Page = (props: {
           {/*  <AppFooter /> */}    
       <div/>
       </div>)}
-    </>
+    </div>
   );
 };
 

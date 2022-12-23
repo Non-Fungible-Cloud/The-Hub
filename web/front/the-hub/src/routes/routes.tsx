@@ -5,6 +5,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import FaqPage from "src/pages/faq";
 
 /* import { Loader } from "components/atoms"; */
 
@@ -25,6 +26,7 @@ const AppRoutes = () => {
             <Route path="/home" element={<LandingPage />} />
             <Route path="/marketplace" element={<MarketplacePage />} />
             <Route path="/items" element={<ProfilePage />} />
+            <Route path='/faqs' element={<FaqPage/>} />
             {/* <Route path="/login" element={<LogInPage />} /> */}
             <Route
               path="/marketplace/:id"

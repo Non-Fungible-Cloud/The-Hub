@@ -54,7 +54,16 @@ const ItemDetailCard = (props: {
       }}
     >
         <div className="flex flex-row gap-2 mt-10">
-            <img src={props.image} alt="item" className="bg-white rounded h-[500px] mx-10"/>
+            <img
+          src={props.image}
+          alt="item"
+          className="min-w-[220px] h-96 object-contain w-0"
+          style={{
+            filter:
+              "drop-shadow(-5px -5px 0px #8e44ad) drop-shadow(5px 5px 0px #f23927) drop-shadow(10px 10px 5px #8e44ad44)",
+            flexGrow: 1,
+          }}
+        />
                 <div className="flex flex-col content-between mr-14">
                 <Typography variant="h3" className="text-left pb-8">
                     {props.name} #000{props.id}

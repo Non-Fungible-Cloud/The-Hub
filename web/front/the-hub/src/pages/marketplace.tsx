@@ -9,11 +9,6 @@ import { PageLoged, Page } from "./index";
  
 const MarketplacePage = () => {
 
-    //TODO: RETRIEVE ITEMS FROM SMART CONTRACT
-    //THERE'S A ITEM FROM EACH SC, SO WE NEED TO RETRIEVE THEM ALL
-    //AND THEN RENDER THEM IN THE PAGE
-    //CALLING ITEMCARD COMPONENT FOR EACH ITEM
-
     return (    
         <PageLoged>
             <div className="">
@@ -25,7 +20,7 @@ const MarketplacePage = () => {
                     <ItemCard2 name="T-shirt" image="/clothing/shirt.jpg"  id={4}></ItemCard2>
                 </div>    
             </div>
-            <div className="mt-12">           
+            <div className="mt-20">           
                 <Typography className="p-0" variant={'h4'}>Accessories</Typography>    
                 <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">
                     <ItemCard2 name="Super Pack" image="/clothing/super-pack.jpg"  id={5}></ItemCard2>
