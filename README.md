@@ -1,6 +1,7 @@
 # Content
 - [Spanish](#spanish)
 - [English](#english) 
+- [Images](#images)
 
 # Spanish
  
@@ -239,5 +240,9 @@ discount more products from the club and sponsoring brands.
 - Traceability of all purchases.
 - Benefits to fans.
 - Obtaining accurate data.
+
+# Images
+
+## Mockups
 
 
