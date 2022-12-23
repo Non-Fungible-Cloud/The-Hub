@@ -246,9 +246,9 @@ discount more products from the club and sponsoring brands.
 
 # Diagrams
 
-![Dapp Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Dapp%20Diagram.png?raw=true)
-![Technological Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Technological%20Diagram.png?raw=true)
-![Sequence Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Sequence%20Diagram.png?raw=true)
+![Dapp Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Dapp%20Diagram.jpg?raw=true)
+![Technological Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Technological%20Diagram.jpg?raw=true)
+![Sequence Diagram](https://github.com/Non-Fungible-Cloud/The-Hub/blob/main/public/diagrams/Sequence%20Diagram.jpg?raw=true)
 
 
 
