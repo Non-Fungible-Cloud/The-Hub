@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ItemCard from "src/components/card/itemCard";
 import ItemCard2 from "src/components/card/itemCard2";
@@ -6,10 +6,11 @@ import ItemCard2 from "src/components/card/itemCard2";
 import { PageLoged } from "./index";
 
 import { isNFTOwner0, isNFTOwner1, isNFTOwner2 } from "src/wallet/contractsCall";
+import ActionButton from "src/components/buttons/actionbutton";
  
 const ProfilePage = () => {
 
-    const [itemList, setItem] = useState<any[]>();
+    const [itemList, setItem] = useState<any[]>([]);
     const [isLoading, setIsLoading] = useState(true);
 
 
@@ -22,39 +23,37 @@ const ProfilePage = () => {
         if (isLoading == false) {
             return;
         } else {
+        var itemsList: any[] = [];
         isNFTOwner0().then((result:any) => {
             if (result == true) {
                 console.log(result);
                 let item = {name:"Heretics Jersey", image:"/clothing/jersey.png", id:1}
-                let items = [item];
-                setItem(items);
+                itemsList.push(item);
             }
             isNFTOwner1().then((res:any) => {
                 if (res == true) {
                     console.log(res);
-                    let items = itemList;
-                    items.push(itemList);
-                    let item = {name:"Sweatshirt", image:"/clothing/sweatshirt.png", id:2}
-                    items.push(item);
-                    setItem(items);
+                    let item2 = {name:"Sweatshirt", image:"/clothing/sweatshirt.png", id:2}
+                    itemsList.push(item2);
                 }
                 isNFTOwner2().then((r:any) => {
                     if (r == true) {
                         console.log(result);
-                        let items:any[] = itemList;
-                        items.push(itemList);
-                        let item = {name:"Sweatpants", image:"/clothing/swatpants.png", id:3}
-                        items.push(item);
-                        setItem(items);
-                        setIsLoading(false);
+                        let item = {name:"Sweatpants", image:"/clothing/sweatpants.png", id:3}
+                        itemsList.push(item);
+                        
                     }
+                    setItem(itemsList);
+                    console.log("itemlist")
+                    console.log(itemsList);
+                    setIsLoading(false);
                 }
                 );
             }
             );
         }
         );
-        console.log(itemList); 
+        
         
     }
     }, []);
@@ -68,22 +67,27 @@ const ProfilePage = () => {
     return (    
         <PageLoged>
             <div className="">
-                <Typography className="" variant={'h4'}>Clothing</Typography>    
-                <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">
-                    <ItemCard2 name="Heretics Jersey" image="/clothing/jersey.png" id={1}></ItemCard2>
-                    <ItemCard2 name="Sweatshirt" image="/clothing/sweatshirt.png"  id={2}></ItemCard2>
-                    <ItemCard2 name="Sweatpants" image="/clothing/sweatpants.png"  id={3}></ItemCard2>
-                    <ItemCard2 name="T-shirt" image="/clothing/shirt.jpg"  id={4}></ItemCard2>
-                </div>    
-            </div>
-            <div className="mt-12">           
-                <Typography className="p-0" variant={'h4'}>Accessories</Typography>    
-                <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">
-                    <ItemCard2 name="Super Pack" image="/clothing/super-pack.jpg"  id={5}></ItemCard2>
-                    <ItemCard2 name="Scarf" image="/clothing/scarf.jpg "  id={6}></ItemCard2>
-                    <ItemCard2 name="Winter Hat" image="/clothing/hat.jpg"  id={7}></ItemCard2>
-                    <ItemCard2 name="Bag" image="/clothing/bag.png"  id={8}></ItemCard2>
-                </div>  
+                <Typography className="" variant={'h4'}>My Collectibles</Typography> 
+            {isLoading ? (
+                    <div  className="mt-12">
+                        <Typography variant="h6">Retrieving data from the blockchain, please wait... </Typography>
+                    </div>
+                ) : (
+                    itemList.length > 3 ? (
+                            itemList.map((item) => (
+                                <div className="mt-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 items-center justify-center">
+                                    <ItemCard2 name={item.name} image={item.image} id={item.id}></ItemCard2>
+                                </div>
+                            ))
+                    ) : (
+                        <div  className="mt-12">
+                            <Typography variant="h6"> You don't own any collectibles yet. </Typography>
+                            <Typography variant="h6"> Check out the NFTs in our Markeplace! </Typography>
+                            <ActionButton url="http://localhost:3000/marketplace" style={{marginTop: '20px'}}>Go to Markeplace</ActionButton> 
+                        </div>
+                    )
+                )} 
+
             </div>
         </PageLoged>
 

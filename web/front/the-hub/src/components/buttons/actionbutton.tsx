@@ -3,12 +3,21 @@ import { Button } from "@mui/material";
 export default function ActionButton({
   children,
   style,
+  url,
 }: {
   children: React.ReactNode;
   style?: React.CSSProperties;
+  url?: string;
 }) {
+
+    function redirect():any {
+        window.location.href = url!;
+    }
+
+
   return (
     <Button
+        onClick={redirect}
       className="h-12"
       style={{
         backgroundImage: "linear-gradient(45deg, #e74c3c, #8e44ad, #f1c40f)",

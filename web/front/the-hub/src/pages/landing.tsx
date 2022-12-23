@@ -4,7 +4,6 @@ import { Button, Card, Typography } from "@mui/material";
 import Page from "./page";
 import ActionButton from "src/components/buttons/actionbutton";
 
-//import Background from "public/background.png";
 
 const LandingPage = () => {
   return (
